@@ -14,7 +14,7 @@
 
   <div class="form-group">
     <label>Время записи</label>
-    <input name="date_and_time" type="text" class="form-control" placeholder="Введите время и дату записи" value="<%=@date_and_time%>">
+    <input id="datetimepicker" name="date_and_time" type="text" class="form-control" placeholder="Введите время и дату записи" value="<%=@date_and_time%>">
   </div>
 
   <div class="form-group">
@@ -51,11 +51,9 @@
 $(function(){
 
     $('#color').simplecolorpicker();
+    $('#datetimepicker').datetimepicker();
 
 });
 
-</script>
 
-<p>
-    <%= @visitmessage %>
-</p>
+</script>
